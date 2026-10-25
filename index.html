@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Weekly Time Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px;
+            color: #333;
+        }
+
+        .timetable {
+            width: 90%;
+            margin: auto;
+
+            display: grid;
+
+            /* 1 column for day + 7 columns for time */
+            grid-template-columns: 120px repeat(7, 1fr);
+
+            border: 1px solid black;
+        }
+
+        .box {
+            padding: 15px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .heading {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        .day {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        .break {
+            background-color: #ffe082;
+            font-weight: bold;
+        }
+
+        .lab {
+            background-color: #c8e6c9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>College Weekly Time Table</h1>
+
+    <div class="timetable">
+
+        <!-- Header Row -->
+        <div class="box heading">Day / Time</div>
+        <div class="box heading">9-10</div>
+        <div class="box heading">10-11</div>
+        <div class="box heading">11-12</div>
+        <div class="box heading">12-1</div>
+        <div class="box heading">1-2</div>
+        <div class="box heading">2-3</div>
+        <div class="box heading">3-4</div>
+
+        <!-- Monday -->
+        <div class="box day">Monday</div>
+        <div class="box">Java</div>
+        <div class="box">DBMS</div>
+        <div class="box">OS</div>
+        <div class="box break">Break</div>
+        <div class="box">Web Tech</div>
+        <div class="box">Maths</div>
+        <div class="box">AI</div>
+
+        <!-- Tuesday -->
+        <div class="box day">Tuesday</div>
+        <div class="box">DBMS</div>
+        <div class="box">Java</div>
+        <div class="box">Maths</div>
+        <div class="box break">Break</div>
+        <div class="box lab">Java Lab</div>
+        <div class="box lab">Java Lab</div>
+        <div class="box">Web Tech</div>
+
+        <!-- Wednesday -->
+        <div class="box day">Wednesday</div>
+        <div class="box">OS</div>
+        <div class="box">AI</div>
+        <div class="box">Java</div>
+        <div class="box break">Break</div>
+        <div class="box">DBMS</div>
+        <div class="box">Maths</div>
+        <div class="box">Web Tech</div>
+
+        <!-- Thursday -->
+        <div class="box day">Thursday</div>
+        <div class="box">Web Tech</div>
+        <div class="box">OS</div>
+        <div class="box">DBMS</div>
+        <div class="box break">Break</div>
+        <div class="box lab">Web Lab</div>
+        <div class="box lab">Web Lab</div>
+        <div class="box">Java</div>
+
+        <!-- Friday -->
+        <div class="box day">Friday</div>
+        <div class="box">Maths</div>
+        <div class="box">AI</div>
+        <div class="box">Java</div>
+        <div class="box break">Break</div>
+        <div class="box">OS</div>
+        <div class="box">DBMS</div>
+        <div class="box">Web Tech</div>
+
+        <!-- Saturday -->
+        <div class="box day">Saturday</div>
+        <div class="box">AI</div>
+        <div class="box">Maths</div>
+        <div class="box">DBMS</div>
+        <div class="box break">Break</div>
+        <div class="box">Java</div>
+        <div class="box">Seminar</div>
+        <div class="box">Library</div>
+
+    </div>
+
+</body>
+</html>
